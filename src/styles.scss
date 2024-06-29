@@ -1,1 +1,148 @@
-/* You can add global styles to this file, and also import other style files */
+.sidebar {
+    background: rgba(90, 45, 130, 0.8);
+    padding: 20px;
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    border-radius: 0 20px 20px 0;
+    transition: width 0.3s;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar:hover {
+    width: 250px;
+}
+
+.sidebar-header {
+    text-align: center;
+    margin-bottom: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.sidebar:hover .sidebar-header {
+    opacity: 1;
+}
+
+.sidebar h1, .sidebar p {
+    margin: 0;
+    color: white;
+}
+
+.sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.sidebar nav ul li {
+    margin: 20px 0;
+    text-align: center;
+    transition: margin 0.3s;
+}
+
+.sidebar nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+    white-space: nowrap;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.sidebar nav ul li a .icon {
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.sidebar nav ul li a .menu-text {
+    opacity: 0;
+    transition: opacity 0.3s;
+    margin-left: 10px;
+}
+
+.sidebar:hover nav ul li a .menu-text {
+    opacity: 1;
+}
+
+.sidebar nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212;
+    color: #FFFFFF;
+    margin: 0;
+    display: flex;
+}
+.sidebar {
+    background: rgba(90, 45, 130, 0.8);
+    padding: 20px;
+    width: 80px;
+    height: 100vh;
+    position: fixed;
+    border-radius: 0 20px 20px 0;
+    transition: width 0.3s;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombreamento leve para a direita */
+}
+.sidebar:hover {
+    width: 250px;
+}
+.sidebar h1, .sidebar p {
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+}
+.sidebar:hover h1, .sidebar:hover p {
+    opacity: 1;
+}
+main {
+    margin-left: 100px;
+    padding: 20px;
+    width: calc(100% - 100px);
+    transition: margin-left 0.3s, width 0.3s;
+}
+.sidebar:hover ~ main {
+    margin-left: 270px;
+    width: calc(100% - 270px);
+}
+.skill-bar {
+    width: 90%;
+    background: linear-gradient(to right, #5A2D82, #A84784);
+    height: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: width 0.5s;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombreamento leve para a direita */
+}
+.skill-bar:hover {
+    width: 100%;
+}
+.skill {
+    margin-bottom: 15px;
+}
+.section {
+    padding: 20px;
+    background-color: rgba(30, 30, 30, 0.8);
+    margin: 20px;
+    border-radius: 10px;
+    display: none;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombreamento leve para a direita */
+}
+.section.active {
+    display: block;
+}
+h2 {
+    color: #5A2D82;
+}
+p {
+    color: #DDDDDD;
+}
