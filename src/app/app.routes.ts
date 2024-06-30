@@ -9,6 +9,6 @@ export const routes: Routes = [
   { path: 'skills', component: SkillsComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'contact', component: ContactComponent },
-  { path: '', redirectTo: '/about', pathMatch: 'full' }, // Redirecionamento padrão
-  { path: '**', redirectTo: '/about' } // Redirecionamento para página não encontrada
+  { path: '', redirectTo: '/about', pathMatch: 'full' },
+  { path: '**', redirectTo: '/about' }
 ];
