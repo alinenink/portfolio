@@ -25,7 +25,7 @@
 
 .sidebar:hover .sidebar-header {
   opacity: 1;
-  margin-top: auto; 
+  margin-top: auto; /* Move o cabeçalho para o final quando expandido */
 }
 
 .sidebar h1,
@@ -87,11 +87,9 @@
   margin-left: 270px;
   width: calc(100% - 270px);
 }
-
-main {
+.main {
   margin-left: 100px;
   padding: 20px;
-  width: calc(100% - 100px);
   transition: margin-left 0.3s, width 0.3s;
 }
 
@@ -123,11 +121,7 @@ body {
   background-color: rgba(30, 30, 30, 0.8);
   margin: 20px;
   border-radius: 10px;
-  display: none;
   box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5); /* Sombreamento leve para a direita */
-}
-.section.active {
-  display: block;
 }
 h2 {
   color: #5a2d82;

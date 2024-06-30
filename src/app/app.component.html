@@ -1,17 +1,29 @@
 <div class="sidebar d-flex flex-column">
   <nav>
     <ul>
-      <li>
-        <a routerLink="/about"><i class="fas fa-user icon"></i><span class="menu-text">Sobre Mim</span></a>
+      <li (click)="navigateTo('about')">
+        <a
+          ><i class="fas fa-user icon"></i
+          ><span class="menu-text">Sobre Mim</span></a
+        >
       </li>
-      <li>
-        <a routerLink="/skills"><i class="fas fa-code icon"></i><span class="menu-text">Skills</span></a>
+      <li (click)="navigateTo('skills')">
+        <a
+          ><i class="fas fa-code icon"></i
+          ><span class="menu-text">Skills</span></a
+        >
       </li>
-      <li>
-        <a routerLink="/projects"><i class="fas fa-project-diagram icon"></i><span class="menu-text">Projetos</span></a>
+      <li (click)="navigateTo('projects')">
+        <a
+          ><i class="fas fa-project-diagram icon"></i
+          ><span class="menu-text">Projetos</span></a
+        >
       </li>
-      <li>
-        <a routerLink="/contact"><i class="fas fa-envelope icon"></i><span class="menu-text">Contato</span></a>
+      <li (click)="navigateTo('contact')">
+        <a
+          ><i class="fas fa-envelope icon"></i
+          ><span class="menu-text">Contato</span></a
+        >
       </li>
     </ul>
   </nav>
@@ -23,7 +35,6 @@
     </div>
   </div>
 </div>
-
-<main>
+<div class="main">
   <router-outlet></router-outlet>
-</main>
+</div>
